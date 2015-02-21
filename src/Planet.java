@@ -1,3 +1,8 @@
+/**
+ * abstract class , Subclasses can extend
+ * Nirbhay Jadhav
+ * February 20, 2015
+ */
 public abstract class Planet {
 
 	private double _diameter;
@@ -19,7 +24,9 @@ public abstract class Planet {
 	{
 		return _moonCount;
 	}
-
+	 //This method sets the number of moons the planet has.
+	 //@param moonCount The number of moons the planet has.
+	
 	public void setMoonCount(int moonCount) 
 	{
 		this._moonCount = moonCount;
@@ -29,6 +36,9 @@ public abstract class Planet {
 		return _orbitalPeriod;
 	}
 
+	 // This method sets the orbital period of the planet
+	 // @param orbitalPeriod The orbital planet of the planet.
+	 
 	public void setOrbitalPeriod(double orbitalPeriod) {
 		this._orbitalPeriod = orbitalPeriod;
 	}
@@ -37,6 +47,10 @@ public abstract class Planet {
 		return _ringCount;
 	}
 
+	
+	//This method sets the number of rings the planet has.
+	//@param ringCount The number of rings the planet has.
+	 
 	public void setRingCount(int ringCount) {
 		this._ringCount = ringCount;
 	}
@@ -45,6 +59,9 @@ public abstract class Planet {
 		return _rotationPeriod;
 	}
 
+	 // This method sets the rotation period of the planet.
+	 // @param rotationPeriod The rotation period of the planet.
+	 
 	public void setRotationPeriod(double rotationPeriod) {
 		this._rotationPeriod = rotationPeriod;
 	}
@@ -61,9 +78,14 @@ public abstract class Planet {
 		return _name;
 	}
 
+	// This method returns information about the planet.
+	 //return the planet's name, diameter and mass.
+
 	public String toString() {
-		return "Planet [diameter=" + _diameter + ", mass=" + _mass + ", name="
-				+ _name + "]";
+		String planetInfo = "Name: " + getName()
+				+ "\nDiameter: " + getDiameter()
+				+ "\nMass: " + getMass() + "\n";
+		return planetInfo;
 	}
 
 }
