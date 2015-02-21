@@ -1,4 +1,7 @@
-
+ /* This program creates GiantPlanet.
+ * Nirbhay Jadhav
+ * February 20, 2015
+ */
 public class GiantPlanet extends Planet implements iHasMoons, iHasRings {
 	//Instance Variables
 	public String _type;
